@@ -71,4 +71,15 @@ def get_move_demo():
         return jsonify({"error": "Move name is required"}), 400
 
     try:
-        with
+        with open("data/move_demos.json", encoding="utf-8") as f:
+            all_moves = json.load(f)
+            move = all_moves.get(move_name)
+            if move:
+                return jsonify(move)
+            else:
+                return jsonify({"error": f"No demo found for '{move_name}'"}), 404
+    except FileNotFoundError:
+        return jsonify({"error": "Demo file not found"}), 500
+
+if __name__ == '__main__':
+    app.run(debug=True)
