@@ -59,4 +59,16 @@ def get_user_workouts():
     try:
         with open("data/user_workouts.json", encoding="utf-8") as f:
             all_logs = json.load(f)
-            history = all_logs.get(str(user_id
+            history = all_logs.get(str(user_id), [])
+            return jsonify(history)
+    except FileNotFoundError:
+        return jsonify([])
+
+@app.route('/get_move_demo')
+def get_move_demo():
+    move_name = request.args.get('name')
+    if not move_name:
+        return jsonify({"error": "Move name is required"}), 400
+
+    try:
+        with
