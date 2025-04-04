@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Pop Power-Up",
+    "genre": "pop",
+    "bpm_range": "110-125",
+    "duration_minutes": 15,
+    "focus": "Full Body",
+    "intensity": "Moderate",
+    "moves": ["Jump Squats", "Plank Walkouts", "Skaters", "Lunges"]
+  },
+  {
+    "name": "Pop Star Sweat Sesh",
+    "genre": "pop",
+    "bpm_range": "105-120",
+    "duration_minutes": 20,
+    "focus": "Full Body",
+    "intensity": "Moderate",
+    "moves": ["Lunges", "Squats", "Plank Jacks", "Skaters"]
+  },
+  {
+    "name": "Core Control",
+    "genre": "pop",
+    "bpm_range": "90-105",
+    "duration_minutes": 15,
+    "focus": "Core",
+    "intensity": "Light",
+    "moves": ["Leg Raises", "Hip Bridges", "Russian Twists", "Plank Jacks"]
+  },
+  {
+    "name": "Punk Burnout",
+    "genre": "punk",
+    "bpm_range": "140-160",
+    "duration_minutes": 20,
+    "focus": "Cardio",
+    "intensity": "High",
+    "moves": ["Jump Squats", "Burpees", "Mountain Climbers", "Skaters"]
+  },
+  {
+    "name": "Moshpit Mayhem",
+    "genre": "punk",
+    "bpm_range": "150-180",
+    "duration_minutes": 15,
+    "focus": "Lower Body",
+    "intensity": "High",
+    "moves": ["Tuck Jumps", "Side Lunges", "Plank Jacks", "Skaters"]
+  },
+  {
+    "name": "Boot Scootin' Burn",
+    "genre": "country",
+    "bpm_range": "95-110",
+    "duration_minutes": 20,
+    "focus": "Full Body",
+    "intensity": "Light",
+    "moves": ["Squats", "Push-Ups", "Lunges", "High Knees"]
+  },
+  {
+    "name": "Country Core Crunch",
+    "genre": "country",
+    "bpm_range": "100-115",
+    "duration_minutes": 15,
+    "focus": "Core",
+    "intensity": "Moderate",
+    "moves": ["Toe Touches", "Plank Walkouts", "Reverse Crunches", "Russian Twists"]
+  },
+  {
+    "name": "Rock & Ripped",
+    "genre": "rock",
+    "bpm_range": "110-130",
+    "duration_minutes": 25,
+    "focus": "Upper Body",
+    "intensity": "Moderate",
+    "moves": ["Push-Ups", "Plank Walkouts", "Jump Squats", "Toe Touches"]
+  },
+  {
+    "name": "Guitar Hero Grind",
+    "genre": "rock",
+    "bpm_range": "100-120",
+    "duration_minutes": 20,
+    "focus": "Full Body",
+    "intensity": "Moderate",
+    "moves": ["Lunges", "Bear Crawls", "Skaters", "Push-Ups"]
+  },
+  {
+    "name": "Hip Hop Hustle",
+    "genre": "hiphop",
+    "bpm_range": "95-110",
+    "duration_minutes": 20,
+    "focus": "Full Body",
+    "intensity": "Moderate",
+    "moves": ["Bear Crawls", "Plank Jacks", "Squats", "Skaters"]
+  },
+  {
+    "name": "Breakdance Burnout",
+    "genre": "hiphop",
+    "bpm_range": "90-105",
+    "duration_minutes": 15,
+    "focus": "Core",
+    "intensity": "Light",
+    "moves": ["Russian Twists", "Hip Bridges", "Mountain Climbers", "Jumping Jacks"]
+  },
+  {
+    "name": "EDM Endurance Blast",
+    "genre": "edm",
+    "bpm_range": "125-135",
+    "duration_minutes": 30,
+    "focus": "Cardio",
+    "intensity": "High",
+    "moves": ["Burpees", "Mountain Climbers", "Jumping Jacks", "High Knees"]
+  },
+  {
+    "name": "Bass Drop Bootcamp",
+    "genre": "edm",
+    "bpm_range": "130-140",
+    "duration_minutes": 20,
+    "focus": "Lower Body",
+    "intensity": "High",
+    "moves": ["Jump Squats", "Side Lunges", "Plank Jacks", "Lunges"]
+  },
+  {
+    "name": "Metal Mayhem",
+    "genre": "metal",
+    "bpm_range": "160-180",
+    "duration_minutes": 25,
+    "focus": "Full Body",
+    "intensity": "Brutal",
+    "moves": ["Burpees", "Tuck Jumps", "Push-Ups", "Plank Walkouts"]
+  },
+  {
+    "name": "Shred Circuit",
+    "genre": "metal",
+    "bpm_range": "150-170",
+    "duration_minutes": 20,
+    "focus": "Upper Body",
+    "intensity": "High",
+    "moves": ["Push-Ups", "Mountain Climbers", "Toe Touches", "Jump Squats"]
+  },
+  {
+    "name": "Lo-Fi Light Flow",
+    "genre": "lofi",
+    "bpm_range": "60-80",
+    "duration_minutes": 15,
+    "focus": "Stretch & Recovery",
+    "intensity": "Low",
+    "moves": ["Hip Bridges", "Toe Touches", "Leg Raises", "Side Lunges"]
+  },
+  {
+    "name": "Zen Lo-Fi Cooldown",
+    "genre": "lofi",
+    "bpm_range": "70-85",
+    "duration_minutes": 10,
+    "focus": "Recovery",
+    "intensity": "Minimal",
+    "moves": ["Toe Touches", "Hip Bridges", "Plank Walkouts", "Leg Raises"]
+  },
+  {
+    "name": "Reggae Recovery",
+    "genre": "reggae",
+    "bpm_range": "75-90",
+    "duration_minutes": 15,
+    "focus": "Stretch & Core",
+    "intensity": "Low",
+    "moves": ["Toe Touches", "Hip Bridges", "Side Lunges", "Reverse Crunches"]
+  }
+]

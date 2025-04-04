@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "First Workout",
+    "description": "Complete your first workout.",
+    "icon": "🏁"
+  },
+  {
+    "id": 2,
+    "name": "5 Workout Streak",
+    "description": "Do 5 workouts in a row.",
+    "icon": "🔥"
+  },
+  {
+    "id": 3,
+    "name": "Genre Explorer",
+    "description": "Try a workout from 5 different genres.",
+    "icon": "🌎"
+  },
+  {
+    "id": 4,
+    "name": "BPM Beast",
+    "description": "Crush workouts in 5 different BPM zones.",
+    "icon": "🎵"
+  },
+  {
+    "id": 5,
+    "name": "Country Strong",
+    "description": "Finish 3 country workouts.",
+    "icon": "🤠"
+  },
+  {
+    "id": 6,
+    "name": "Punk's Not Dead",
+    "description": "Finish 3 punk workouts.",
+    "icon": "🧨"
+  }
+]

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amp’d Fit Demo</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; background: #111; color: #eee; }
+    input, button { padding: 0.5rem; margin: 0.25rem; }
+    .move { margin-top: 1rem; border: 1px solid #444; padding: 1rem; background: #222; }
+  </style>
+</head>
+<body>
+
+  <h1>🔥 Amp’d Fit: Local Demo</h1>
+
+  <div>
+    <input id="genre" placeholder="Genre (e.g. pop, punk)">
+    <input id="bpm" placeholder="BPM (e.g. 120)">
+    <button onclick="getWorkout()">Get Workout</button>
+  </div>
+
+  <div id="workoutResult"></div>
+  <div id="moveDemo"></div>
+
+  <script>
+    async function getWorkout() {
+      const genre = document.getElementById('genre').value;
+      const bpm = document.getElementById('bpm').value;
+      const res = await fetch(`http://127.0.0.1:5000/get_workout?genre=${genre}&bpm=${bpm}`);
+      const data = await res.json();
+
+      let html = `<h2>Workout: ${data.name}</h2>`;
+      html += `<p><strong>Intensity:</strong> ${data.intensity}</p>`;
+      html += `<p><strong>Moves:</strong></p><ul>`;
+      for (let move of data.moves) {
+        html += `<li><button onclick="getMoveDemo('${move}')">${move}</button></li>`;
+      }
+      html += `</ul>`;
+      document.getElementById('workoutResult').innerHTML = html;
+    }
+
+    async function getMoveDemo(moveName) {
+      const res = await fetch(`http://127.0.0.1:5000/get_move_demo?name=${moveName}`);
+      const data = await res.json();
+      if (data.description) {
+        document.getElementById('moveDemo').innerHTML = `
+          <div class="move">
+            <h3>${moveName}</h3>
+            <p>${data.description}</p>
+            <small>Animation: ${data.media}</small>
+          </div>
+        `;
+      } else {
+        document.getElementById('moveDemo').innerHTML = `<p style="color:red">No demo found for ${moveName}</p>`;
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Metal Meltdown Circuit",
+    "genre": "Metal",
+    "bpm_range": "150-170",
+    "intensity": "Extreme",
+    "duration_minutes": 20,
+    "focus": "Strength + Cardio",
+    "moves": ["Burpees", "Push-Ups", "Tuck Jumps", "Jump Squats"]
+  },
+  {
+    "name": "Shred to Oblivion",
+    "genre": "Metal",
+    "bpm_range": "160-180",
+    "intensity": "High",
+    "duration_minutes": 18,
+    "focus": "Upper Body + Core",
+    "moves": ["Push-Ups", "Mountain Climbers", "Plank Jacks", "Bear Crawls"]
+  },
+  {
+    "name": "Lo-Fi Light Flow",
+    "genre": "Lo-Fi",
+    "bpm_range": "60-80",
+    "intensity": "Low",
+    "duration_minutes": 15,
+    "focus": "Stretch + Recovery",
+    "moves": ["Hip Bridges", "Toe Touches", "Leg Raises", "Side Lunges"]
+  },
+  {
+    "name": "Zen Lo-Fi Cooldown",
+    "genre": "Lo-Fi",
+    "bpm_range": "70-85",
+    "intensity": "Minimal",
+    "duration_minutes": 10,
+    "focus": "Recovery",
+    "moves": ["Toe Touches", "Hip Bridges", "Plank Walkouts", "Leg Raises"]
+  },
+  {
+    "name": "Reggae Recovery",
+    "genre": "Reggae",
+    "bpm_range": "75-90",
+    "intensity": "Low",
+    "duration_minutes": 15,
+    "focus": "Stretch & Core",
+    "moves": ["Toe Touches", "Hip Bridges", "Side Lunges", "Reverse Crunches"]
+  },
+  {
+    "name": "Island Flow Mobility",
+    "genre": "Reggae",
+    "bpm_range": "70-85",
+    "intensity": "Very Low",
+    "duration_minutes": 12,
+    "focus": "Mobility + Breathwork",
+    "moves": ["Arm Circles", "Neck Rolls", "Hip Bridges", "Wall Sit"]
+  }
+]
