@@ -6,7 +6,7 @@ import json
 import os
 
 app = Flask(__name__)
-CORS(app)  # ✅ ALLOW frontend to access backend routes
+CORS(app)  # ✅ Allow frontend to access backend routes
 
 @app.route('/get_workout')
 def get_workout():
@@ -59,27 +59,4 @@ def get_user_workouts():
     try:
         with open("data/user_workouts.json", encoding="utf-8") as f:
             all_logs = json.load(f)
-            history = all_logs.get(str(user_id), [])
-            return jsonify(history)
-    except FileNotFoundError:
-        return jsonify([])
-
-@app.route('/get_move_demo')
-def get_move_demo():
-    move_name = request.args.get('name')
-    if not move_name:
-        return jsonify({"error": "Move name is required"}), 400
-
-    try:
-        with open("data/move_demos.json", encoding="utf-8") as f:
-            all_moves = json.load(f)
-            move = all_moves.get(move_name)
-            if move:
-                return jsonify(move)
-            else:
-                return jsonify({"error": f"No demo found for '{move_name}'"}), 404
-    except FileNotFoundError:
-        return jsonify({"error": "Demo file not found"}), 500
-
-if __name__ == '__main__':
-    app.run(debug=True)
+            history = all_logs.get(str(user_id
