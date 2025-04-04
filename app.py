@@ -8,6 +8,21 @@ import os
 app = Flask(__name__)
 CORS(app)  # ✅ Allow frontend to access backend routes
 
+# ✅ HOMEPAGE ROUTE — makes root URL look good
+@app.route('/')
+def home():
+    return '''
+        <h1>🔥 Amp’d Fit API is Live!</h1>
+        <p>Use <code>/get_workout?genre=pop&bpm=120</code> to fetch a workout.</p>
+        <p>Other endpoints:</p>
+        <ul>
+            <li><code>/get_badges?user_id=123</code></li>
+            <li><code>/complete_workout?user_id=123&genre=pop&bpm=120</code></li>
+            <li><code>/get_user_workouts?user_id=123</code></li>
+            <li><code>/get_move_demo?name=Lunges</code></li>
+        </ul>
+    '''
+
 @app.route('/get_workout')
 def get_workout():
     genre = request.args.get('genre')
