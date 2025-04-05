@@ -8,19 +8,25 @@ import os
 app = Flask(__name__)
 CORS(app)  # ✅ Allow frontend to access backend routes
 
-# ✅ HOMEPAGE ROUTE — makes root URL look good
+# ✅ HOMEPAGE — make root URL not show "Not Found"
 @app.route('/')
 def home():
     return '''
-        <h1>🔥 Amp’d Fit API is Live!</h1>
-        <p>Use <code>/get_workout?genre=pop&bpm=120</code> to fetch a workout.</p>
-        <p>Other endpoints:</p>
-        <ul>
-            <li><code>/get_badges?user_id=123</code></li>
-            <li><code>/complete_workout?user_id=123&genre=pop&bpm=120</code></li>
-            <li><code>/get_user_workouts?user_id=123</code></li>
-            <li><code>/get_move_demo?name=Lunges</code></li>
-        </ul>
+        <html>
+            <head><title>Amp’d Fit API</title></head>
+            <body style="font-family:sans-serif; background:#111; color:#fff; padding:2rem;">
+                <h1>🔥 Amp’d Fit API is Live!</h1>
+                <p>This backend powers the AI music-driven fitness experience.</p>
+                <h3>🚀 Try these endpoints:</h3>
+                <ul>
+                    <li><code>/get_workout?genre=pop&bpm=120</code></li>
+                    <li><code>/get_badges?user_id=123</code></li>
+                    <li><code>/complete_workout?user_id=123&genre=pop&bpm=120</code></li>
+                    <li><code>/get_user_workouts?user_id=123</code></li>
+                    <li><code>/get_move_demo?name=Lunges</code></li>
+                </ul>
+            </body>
+        </html>
     '''
 
 @app.route('/get_workout')
@@ -98,5 +104,3 @@ def get_move_demo():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
